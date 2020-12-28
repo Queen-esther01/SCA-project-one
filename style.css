@@ -1,0 +1,320 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar_links{
+    list-style-type: none;
+    display: none;
+}
+.fa-bars{
+    font-size: 1.5em;
+    border: 1px solid red;
+    padding: 10px 20px 10px 20px;
+    margin: 15px;
+}
+.logo{
+    font-size: 1.5em;
+    margin: 25px 0 0 15px;
+    font-weight: bold;
+}
+.border_divide{
+    width: 100%;
+    height: 35px;
+    background: grey;
+}
+
+/* hero section */
+.hero_container{
+    height: 88vh;
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.hero_heading{
+    font-size: 1.5em;
+}
+.hero_description{
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 20px;
+}
+.find_vendor_button{
+    background: gray;
+    border: none;
+    padding: 10px 50px;
+    font-size: 1.2em;
+    color: white;
+}
+.pagination_container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 10px 0;
+}
+.pagination_container div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.pagination{
+    background: rgb(170, 168, 168);
+}
+#active_pagination{
+    background: grey;
+}
+
+/* offering section */
+.offering_section{
+    padding: 30px 0;
+}
+.offering_heading{
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+.offering_box_container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+.offering_box{
+    width: 200px;
+    margin: 30px auto;
+}
+.offering_box h3{
+    margin: 10px 0;
+}
+.offering_box img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* download section */
+.download_section{
+    background: lightgray;
+    text-align: center;
+    padding: 35px 0;
+}
+.download_container{
+    width: 300px;
+    margin: auto;
+}
+.download_description{
+    margin: 20px 0;
+    line-height: 1.5em;
+}
+.download_container button{
+    padding: 10px 50px;
+    margin: 5px;
+    border: 1px solid grey;
+}
+
+/* testimonial section */
+.testimonial_section{
+    padding: 30px 0 40px 0;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+.customer_image{
+    width: 100px;
+    border-radius: 50%;
+    padding: 20px 0;
+}
+.customer_testimonial{
+    line-height: 1.5em;
+}
+.customer_name{
+    font-weight: bold;
+}
+.testimonial_pagination{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 0 0;
+}
+.testimonial_pagination div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 10px;
+}
+#testimonial_active_pagination{
+    background: grey;
+}
+
+/* popular vendors section */
+.popular_vendors_section{
+    padding: 10px 0 30px 0;
+}
+.vendor_heading{
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+.popular_vendor_container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.vendor_box{
+    width: 150px;
+    margin: 30px auto;
+    box-shadow: 1px 1px 4px 4px rgb(252, 248, 248);
+    padding: 20px;
+}
+.vendor_box h3{
+    margin: 10px 0;
+}
+.vendor_box p{
+    line-height: 1.5em;
+}
+.vendor_box img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* find section */
+.find_section{
+    background: lightgray;
+    text-align: center;
+    padding: 35px 0;
+}
+.find_container{
+    width: 300px;
+    margin: auto;
+}
+.find_description{
+    margin: 20px 0;
+    line-height: 1.5em;
+}
+.find_button{
+    padding: 10px 60px;
+    margin: 5px;
+    border: 1px solid grey;
+}
+
+@media(min-width:500px) and (max-width: 899px){
+    .hero_content{
+        max-width: 550px;
+    }
+    .hero_heading{
+        font-size: 2em;
+    }
+    .find_vendor_button{
+        font-size: 1em;
+    }
+    .hero_description::after{
+        content: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of pictures.";
+    }
+    
+    /* offering section */
+    .offering_box_container{
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    /* download section */
+    .download_container{
+        width: 450px;
+    }
+
+    /* testimonial section */
+    .testimonial_section{
+        width: 450px;
+    }
+
+    /* popular_vendor_container */
+    .popular_vendor_container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    /* find section */
+    .find_container{
+        width: 450px;
+    }
+}
+@media(min-width: 900px){
+    .fa-bars{
+        display: none;
+    }
+    .navbar_links{
+        display: flex;
+    }
+    .navbar_links li{
+        margin: 30px 25px 25px 25px;
+    }
+    .hero_description::after{
+        content: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of pictures.";
+    }
+    /* .navbar{
+        max-width: 1100px;
+        margin: auto;
+    } */
+    .border_divide{
+        visibility: hidden;
+    }
+    .logo{
+        font-size: 1.5em;
+        margin: 25px 0 15px 15px;
+        font-weight: bold;
+    }
+    .hero_content{
+        max-width: 750px;
+    }
+    .hero_heading{
+        font-size: 2.2em;
+    }
+
+    /* offering section */
+    .offering_box_container{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        max-width: 1200px;
+    }
+    .offering_box img{
+        width: 150px;
+    }
+
+    /* download section */
+    .download_container{
+        width: 700px;
+    }
+
+    /* testimonial section */
+    .testimonial_section{
+        width: 700px;
+    }
+
+    /* popular_vendor_container */
+    .popular_vendor_container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+        max-width: 1200px;
+    }
+
+    /* download section */
+    .find_container{
+        width: 700px;
+    }
+}
