@@ -15,14 +15,18 @@ body{
 }
 .fa-bars{
     font-size: 1.5em;
-    border: 1px solid red;
+    border: 1px solid gray;
     padding: 10px 20px 10px 20px;
     margin: 15px;
+}
+i{
+    color: grey;
 }
 .logo{
     font-size: 1.5em;
     margin: 25px 0 0 15px;
     font-weight: bold;
+    color: gray;
 }
 .border_divide{
     width: 100%;
