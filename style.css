@@ -36,7 +36,7 @@ i{
 
 /* hero section */
 .hero_container{
-    height: 88vh;
+    height: 85vh;
     background: lightgray;
     display: flex;
     flex-direction: column;
